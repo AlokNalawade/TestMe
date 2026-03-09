@@ -1,5 +1,28 @@
-// Kangaroo Math Test App - Vanilla JS + Firebase (free tier)
-// Replace firebaseConfig below with your own Firebase project config.
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCO0Div6RgFAvEiJF-dvmgCeqx5rgkyj1E",
+  authDomain: "testme-777.firebaseapp.com",
+  projectId: "testme-777",
+  storageBucket: "testme-777.firebasestorage.app",
+  messagingSenderId: "818428755898",
+  appId: "1:818428755898:web:cc94d231a770f846bee783",
+  measurementId: "G-EJJD6JDDN5"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+// TestMe App - Vanilla JS + Firebase (free tier)
+/* // Replace firebaseConfig below with your own Firebase project config.
 
 const firebaseConfig = {
   apiKey: "YOUR_API_KEY",
@@ -10,11 +33,11 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
-const db = firebase.firestore();
+const db = firebase.firestore(); */
 
 // Simple role handling: emails listed here will be treated as admins.
 // You can remove this and instead store role in the Firestore users collection if preferred.
-const ADMIN_EMAILS = ["admin@example.com"];
+const ADMIN_EMAILS = ["alok572@gmail.com"];
 
 const state = {
   user: null,
